@@ -2,9 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Webpack</title>
+    <title>Best runner</title>
 </head>
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
+  <header class="page-header">
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Main</a>
+        </li>
+        <li class="main-nav__item main-nav__link--active">
+          <a class="main-nav__link" href="/trainings">Trainings</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/stats">Statistics</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/login">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Your trainings</h1>
+    <section class="trainings">
+      <div class="trainings-filter">
+        <p class="trainings-filter__title">Filter:</p>
+        <ul class="trainings-filter__list type-filter">
+          <li class="type-filter__item">
+            <label class="type-filter__label" for="run">Run</label>
+            <input class="type-filter__input" type="radio" id="run" name="type_filter" value="run">
+          </li>
+          <li class="type-filter__item">
+            <label class="type-filter__label" for="walk">Walk</label>
+            <input class="type-filter__input" type="radio" id="walk" name="type_filter" value="walk">
+          </li>
+          <li class="type-filter__item">
+            <label class="type-filter__label" for="cycling">Cycling</label>
+            <input class="type-filter__input" type="radio" id="cycling" name="type_filter" value="cycling">
+          </li>
+          <li class="type-filter__item">
+            <label class="type-filter__label" for="skiing">Skiing</label>
+            <input class="type-filter__input" type="radio" id="skiing" name="type_filter" value="skiing">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
