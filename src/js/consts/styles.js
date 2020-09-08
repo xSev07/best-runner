@@ -6,10 +6,11 @@ export const Size = {
 // Colors
 export const MainColor = {
   PRIMARY: `#000000`,
-  SECONDARY: `#ffffff`,
+  SECONDARY: `#cccccc`,
   SUCCESS: `#00FF00`,
 };
 
 export const NeutralColor = {
   PRIMARY: `#808080`,
+  SECONDARY: `#404040`,
 };

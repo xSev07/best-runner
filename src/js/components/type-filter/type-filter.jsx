@@ -7,7 +7,7 @@ import {transformToFirstCapitalSymbol} from "../../utils/common/common";
 const Container = styled.div`
   display: flex;
   max-width: ${Size.DESKTOP_WIDTH};
-  margin: 0 auto;
+  margin: 0 auto 40px;
 `;
 
 const List = styled.ul`
