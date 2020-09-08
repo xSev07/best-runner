@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../header/header.jsx";
+import TrainingPage from "../training-page/training-page.jsx";
 
 const App = () => {
   return (
-    <>
-      <Header/>
-    </>
+    <TrainingPage/>
   );
 };
 
