@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {MainColor, NeutralColor, Size} from "../../consts/styles";
+import {MainColor, NeutralColor, ScreenSize} from "../../consts/styles";
 
 const StyledHeader = styled.header`
   padding-top: 1px;
@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
 `;
 
 const Nav = styled.nav`
-  max-width: ${Size.DESKTOP_WIDTH};
+  max-width: ${ScreenSize.DESKTOP};
   margin: 0 auto;
 `;
 

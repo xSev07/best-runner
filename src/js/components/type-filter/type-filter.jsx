@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import {MainColor, Size} from "../../consts/styles";
+import {MainColor, ScreenSize} from "../../consts/styles";
 import {typeFilters} from "../../consts/common";
 import {transformToFirstCapitalSymbol} from "../../utils/common/common";
 
 const Container = styled.div`
   display: flex;
-  max-width: ${Size.DESKTOP_WIDTH};
+  max-width: ${ScreenSize.DESKTOP};
   margin: 0 auto 40px;
 `;
 
@@ -63,7 +63,7 @@ const FilterInput = styled.input.attrs((props) => ({
 
 const generateFilters = (value, isActive) => {
   return (
-    <Item>
+    <Item key={value}>
       <FilterInput id={value} defaultChecked={isActive}/>
       <Label htmlFor={value}>{transformToFirstCapitalSymbol(value)}</Label>
     </Item>

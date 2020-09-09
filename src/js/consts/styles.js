@@ -1,6 +1,7 @@
 // Size
-export const Size = {
-  DESKTOP_WIDTH: `1280px`,
+export const ScreenSize = {
+  DESKTOP: `1280px`,
+  TABLET: `768px`,
 };
 
 // Colors
